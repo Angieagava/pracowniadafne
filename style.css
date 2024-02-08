@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*A-CLEARFIX*/
+.row:before,
+.row:after {
+    content: "";
+    display: block;
+}
+
+.row:after {
+    clear: both;
+}
+
+
+*:focus {
+    box-shadow: none!important;
+}
+
+    /*BODY*/
+
+body {
+    background-position: initial;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #000;
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+
+}
+
+h1 {
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+nav {
+font-size: 1.2rem;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+.btn {border-radius:0;}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.box {
+  box-shadow: 0 10px 10px rgba(0,0,0,.1);
+}
+
+.box-in {
+    box-shadow: inset 0px 0px 24px 0px rgba(226, 226, 226, 1);
+}
+
+.sticky-top {
+    z-index: 3;
+    background: #fff;
+}
+
+.margin-top {
+    margin-top: 5%;
+}
+
+.margin-bottom {
+    margin-bottom: 5%;
+} 
+
+.btn-color {
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+.btn-color:hover {
+    border: 1px solid white;
+    background-color: red;
+    color: white;
+    transition: all 0.5s ease-out 0s;
+    transform: perspective(500px) translate(20px, -20px);
+    box-shadow: -20px 20px 10px #ccc;
+}
+
+.btn-outline-dark:hover {
+    transition: all 0.5s ease-out 0s;
+    transform: perspective(500px) translate(-20px, -20px);
+    box-shadow: -20px 20px 10px #ccc;
+}
+
+.hero {
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    z-index: 1;
+}
+
+.logo {
+    height: 80px;
+    padding:10px;
+}
+
+.logobig {
+    height: 140px;
+}
+
+.actives {
+    font-weight: 500;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+    color: #000;
+}
+
+.nav-item:hover {
+    transition: all 0.33s ease-out 0s;
+    color: red;
+}
+
+
+.mapbg img {
+    background-size: contain;
+    background-position: center;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.mapbg img:hover {
+   box-shadow: 1px 1px 5px rgba(0,0,0,.1);
+   transform: scale(1.01);
+   transition: all 0.6s ease-out 0s;
+   border: 1px dashed red;
+}
+
+.address {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+} 
+
+.icon {
+    height: 1.6rem;
+}
+
+.offer img {
+    max-height: 10rem;
+}
+
+.offer p {
+    font-size: 1.5rem;
+}
+
+.offer h3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.bcg, .bcg1 {
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.bcg img {
+    height: 200px;
+}
+
+.bcg1 {
+    padding: 1rem;
+}
+
+.bcg1 img {
+    height: auto;
+    width: 100%;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+
+.footer {
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.company-info {
+    font-size: .8rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 red;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+ /*TRACKING*/
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
